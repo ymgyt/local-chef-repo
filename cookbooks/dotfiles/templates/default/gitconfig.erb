@@ -1,0 +1,23 @@
+[user]
+  name = <%= @user['name'] %>
+  email = <%= @user['email'] %>
+[core]
+  excludesfile = <%= "#{ENV['HOME']}/.gitignore" %>
+  editor = Emacs
+[push]
+  default = simple
+[ghq]
+  root = <%= @gopath %>/src
+[github]
+	user = <%= @github['user'] %>
+	oauth-token = <%= @github['oauth_token'] %>
+[alias]
+    s = status
+    l = log
+    co = checkout
+    a = add
+    cm = commit
+    f = fetch
+    p = pull
+    b = branch
+    

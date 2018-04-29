@@ -1,0 +1,16 @@
+{
+  "name": "workstation-a",
+  "default_attributes": {
+    "gitconfig": {
+      "user": {
+        "name": "ymgyt"
+      },
+      "github": {
+        "user": "ymgyt"
+      }  
+    }
+  },
+  "run_list": [
+    "recipe[dotfiles]"
+  ]
+}
