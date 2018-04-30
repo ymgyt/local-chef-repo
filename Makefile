@@ -1,5 +1,6 @@
 .PHONY: init
 init: init-homebrew init-chef init-berks
+	@cp .envrc.template .envrc
 
 .PHONY:
 init-homebrew:

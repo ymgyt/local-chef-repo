@@ -1,6 +1,7 @@
 default['brew']['packages'] = {
   'coreutils' => {},
   'gawk' => {},
+  'git' => {},
   'gnu-sed' => {
     'options' =>  ['--with-default-names']
   },

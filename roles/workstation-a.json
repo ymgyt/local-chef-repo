@@ -8,10 +8,20 @@
       "github": {
         "user": "ymgyt"
       }  
+    },
+    "go": {
+      "install_path": "/usr/local",
+      "version": "1.10.1",
+      "packages": [
+        "github.com/golang/dep/cmd/dep",
+        "github.com/motemen/ghq",
+        "github.com/tsenart/vegeta"
+      ]
     }
   },
   "run_list": [
-    "recipe[dotfiles]",
-    "recipe[brew]"
+    "recipe[dotfiles]", 
+    "recipe[brew]",
+    "recipe[go]"
   ]
 }
