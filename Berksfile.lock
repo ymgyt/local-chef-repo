@@ -1,0 +1,5 @@
+DEPENDENCIES
+  homebrew
+
+GRAPH
+  homebrew (5.0.4)

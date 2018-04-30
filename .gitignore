@@ -6,4 +6,5 @@ bin/*
 .kitchen.local.yml
 nodes/
 .delivery/
-
+local-mode-cache/
+cookbooks/
