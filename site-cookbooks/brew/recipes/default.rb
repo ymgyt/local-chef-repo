@@ -4,6 +4,8 @@
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
+include_recipe "homebrew"
+
 node['brew']['packages'].each do |pkg,cfg|
   options = cfg['options']
   

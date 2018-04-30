@@ -1,6 +1,8 @@
-==========================
-local develop environmen
-==========================
+================================
+local development environment
+================================
+
+
 
 install
 =====
@@ -17,4 +19,4 @@ run
 
 .. code-block:: bash
 
-   chef-client -o "role[workstation-a]" -c client.rb
+   [sudo -E] chef-client -o "role[workstation-a]" -c client.rb
