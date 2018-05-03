@@ -22,6 +22,8 @@
   "run_list": [
     "recipe[dotfiles]", 
     "recipe[brew]",
-    "recipe[go]"
+    "recipe[go]",
+    "recipe[site-python]",
+    "recipe[site-git]"
   ]
 }

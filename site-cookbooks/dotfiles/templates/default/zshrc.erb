@@ -27,6 +27,7 @@ export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 alias vi=vim
 alias awk='gawk'
 alias g=git
+alias tf=terraform 
 
 # less
 #-W移動した際のハイライト, -M ファイル名, -S折り返さない, -RASCII解釈, -g検索時の反転を現在行のみに
@@ -37,6 +38,18 @@ MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
 
 # git logの文字化け防止
 export LESSCHARSET=utf-8
+
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# nvm
+# export NVM_DIR="$HOME/.nvm"
+# if [ -f "$NVM_DIR/nvm.sh" ]; then
+#    . $NVM_DIR/nvm.sh
+#    nvm use default > /dev/null
+#    source <(npm completion)
+# fi
+ 
 
 #pyenv
 #export PYENV_ROOT="$HOME/.pyenv"
@@ -92,8 +105,9 @@ export EDITOR=Emacs
 # https://github.com/direnv/direnv
 eval "$(direnv hook zsh)"
 
-eval "$(chef shell-init zsh)"
+# chef
+if which chef > /dev/null; then eval "$(chef shell-init zsh)"; fi
 
 # emacs
-export PATH=/Applications/Emacs.app/Contents/MacOS:${PATH}
+export PATH=/Applications/Emacs.app/Contents/MacOS:/Application/Emacs.app/Contents/MacOS/bin:${PATH}
 export EDITOR=Emacs

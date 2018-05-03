@@ -1,5 +1,15 @@
 DEPENDENCIES
   homebrew
+  poise-python
 
 GRAPH
   homebrew (5.0.4)
+  poise (2.8.1)
+  poise-archive (1.5.0)
+    poise (~> 2.6)
+  poise-languages (2.1.2)
+    poise (~> 2.5)
+    poise-archive (~> 1.0)
+  poise-python (1.7.0)
+    poise (~> 2.7)
+    poise-languages (~> 2.0)
