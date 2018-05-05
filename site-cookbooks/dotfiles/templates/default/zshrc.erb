@@ -3,8 +3,12 @@ promptinit
 # prompt
 PS1="[loc %2C%(?..(%?%))] "
 
+fpath=(
+    /usr/local/share/zsh-completions
+    ~/.zsh/completion
+    $fpath
+)
 autoload -Uz compinit && compinit -i
-fpath=(/usr/local/share/zsh-completions $fpath)
 
 setopt PROMPT_SUBST
 setopt AUTOCD
