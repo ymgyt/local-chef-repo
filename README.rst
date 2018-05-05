@@ -19,4 +19,4 @@ run
 
 .. code-block:: bash
 
-   [sudo -E] chef-client -o "role[workstation-a]" -c client.rb
+   [sudo -AE] chef-client -o "role[workstation-a]" -c client.rb

@@ -1,3 +1,4 @@
-GITCONFIG_USER_EMAIL=me@example.com
-GITCONFIG_GITHUB_OAUTHTOKEN=yourtoken
-ME=me
+export GITCONFIG_USER_EMAIL=me@example.com
+export GITCONFIG_GITHUB_OAUTHTOKEN=yourtoken
+export ME=me
+export SUDO_ASKPASS=$(pwd)/scripts/sudo_askpass.sh

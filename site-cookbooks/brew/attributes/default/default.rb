@@ -15,10 +15,14 @@ default['brew']['packages'] = {
 }
 
 default['brew']['casks'] = [
-  # cask外でinstallしているとerrorになる.かといってforceで既存こわしたくない.悩ましい
-  # 'alfred',
-  # 'evernote',
-  # 'google-chrome',
+  # あとたりなもの
+  # iterm2
+  # google-iem
+  # pomotodo 
+  'alfred',
+  'docker',
+  'evernote',
+  'karabiner-elements',
   'kindle',
   'slack',
 ]

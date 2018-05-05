@@ -8,3 +8,4 @@ nodes/
 .delivery/
 local-mode-cache/
 cookbooks/
+scripts/sudo_askpass.sh
