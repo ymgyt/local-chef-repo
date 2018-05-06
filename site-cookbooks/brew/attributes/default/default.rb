@@ -18,7 +18,9 @@ default['brew']['casks'] = [
   # あとたりなもの
   # iterm2
   # google-iem
-  # pomotodo 
+  # pomotodo
+  # sequel
+  # postman
   'alfred',
   'docker',
   'evernote',
