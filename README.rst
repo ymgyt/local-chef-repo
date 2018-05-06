@@ -20,3 +20,16 @@ run
 .. code-block:: bash
 
    [sudo -AE] chef-client -o "role[workstation-a]" -c client.rb
+
+troubleshoot
+============
+
+install go package
+------------------
+
+.. code-block:: text
+
+   usr/local/go/src/net/sockoptip_bsdvar.go:14:59: setIPv4MulticastInterface redeclared in this block
+
+
+`rm -rf /usr/local/go`    

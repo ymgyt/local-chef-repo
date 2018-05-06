@@ -25,6 +25,7 @@ template 'zshrc' do
   source 'zshrc.erb'
   action :create
   force_unlink true
+  owner user
   manage_symlink_source false
 end
 
@@ -33,6 +34,7 @@ template 'gitconfig' do
   source 'gitconfig.erb'
   action :create
   force_unlink true
+  owner user
   manage_symlink_source false
   variables(
     :user => {
@@ -52,6 +54,7 @@ cookbook_file 'gitignore' do
   source 'gitignore'
   action :create
   force_unlink true
+  owner user
   manage_symlink_source false
 end
   

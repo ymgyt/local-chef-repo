@@ -21,10 +21,10 @@ default['brew']['casks'] = [
   # pomotodo
   # sequel
   # postman
-  'alfred',
-  'docker',
-  'evernote',
-  'karabiner-elements',
+#  'alfred',
+ # 'docker',
+  #'evernote',
+#  'karabiner-elements',
   'kindle',
   'slack',
 ]
