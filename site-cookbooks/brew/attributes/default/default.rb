@@ -4,6 +4,9 @@ default['brew']['packages'] = {
   'dep' => {},
   'gawk' => {},
   'git' => {},
+  'global' => {
+    'options' => ['--wth-exuberant-ctags', '--with-pygements']
+  }
   'gnu-sed' => {
     'options' =>  ['--with-default-names']
   },
