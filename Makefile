@@ -14,3 +14,7 @@ init-chef:
 .PHONY: init-berks
 init-berks:
 	berks vendor cookbooks
+
+.PHONY: apply
+apply:
+	sudo -AE chef-client -o "role[workstation-a]" -c client.rb
