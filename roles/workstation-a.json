@@ -15,7 +15,8 @@
       "packages": [
         "github.com/golang/dep/cmd/dep",
         "github.com/motemen/ghq",
-        "github.com/tsenart/vegeta"
+        "github.com/tsenart/vegeta",
+        "github.com/jstemmer/gotags"
       ]
     }
   },
