@@ -25,6 +25,8 @@ bindkey -e
 
 # PATH
 export PATH=${PATH}:/usr/local/bin
+## gnu getoptを優先する
+export PATH="/usr/local/opt/gnu-getopt/bin:${PATH}"
 
 # coreutils
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
@@ -34,7 +36,7 @@ export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 alias vi=vim
 alias awk='gawk'
 alias g=git
-alias tf=terraform 
+alias tf=terraform
 
 # less
 #-W移動した際のハイライト, -M ファイル名, -S折り返さない, -RASCII解釈, -g検索時の反転を現在行のみに

@@ -1,8 +1,12 @@
 # coding: utf-8
 default['brew']['packages'] = {
+  'aspell' => {
+    'options' => ['--lang=en']
+  },
   'coreutils' => {},
   'dep' => {},
   'gawk' => {},
+  'gnu-getopt' => {},
   'git' => {},
   'global' => {
     'options' => ['--with-exuberant-ctags', '--with-pygements']
