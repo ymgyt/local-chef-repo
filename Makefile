@@ -17,4 +17,4 @@ init-berks:
 
 .PHONY: apply
 apply:
-	sudo -AE chef-client -o "role[workstation-a]" -c client.rb
+	sudo -AE /opt/chefdk/bin/chef-client -o "role[workstation-a]" -c client.rb

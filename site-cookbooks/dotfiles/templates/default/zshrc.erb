@@ -115,7 +115,8 @@ export EDITOR=Emacs
 eval "$(direnv hook zsh)"
 
 # chef
-if which chef > /dev/null; then eval "$(chef shell-init zsh)"; fi
+# rbenvより強く支配してしまうのでCO
+#if which chef > /dev/null; then eval "$(chef shell-init zsh)"; fi
 
 # emacs
 export PATH=/Applications/Emacs.app/Contents/MacOS:/Application/Emacs.app/Contents/MacOS/bin:${PATH}
