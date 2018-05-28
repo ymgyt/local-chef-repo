@@ -49,6 +49,15 @@ template 'gitconfig' do
   )
 end
 
+template 'aspell_conf' do
+  path "#{ENV['HOME']}/.aspell.conf"
+  source 'aspell_conf.erb'
+  action :create
+  force_unlink true
+  owner user
+  manage_symlink_source false
+end
+
 cookbook_file 'gitignore' do
   path "#{ENV['HOME']}/.gitignore"
   source 'gitignore'
@@ -57,5 +66,6 @@ cookbook_file 'gitignore' do
   owner user
   manage_symlink_source false
 end
-  
+
+
  
