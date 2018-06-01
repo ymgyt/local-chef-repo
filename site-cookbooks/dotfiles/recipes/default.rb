@@ -67,5 +67,12 @@ cookbook_file 'gitignore' do
   manage_symlink_source false
 end
 
-
- 
+cookbook_file 'aspell_user_dict' do
+  path "#{ENV['HOME']}/.aspell.en.pws"
+  source 'aspell_en_pws'
+  action :create
+  force_unlink true
+  owner user
+  manage_symlink_source false
+end
+  
